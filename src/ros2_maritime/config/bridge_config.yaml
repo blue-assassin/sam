@@ -22,4 +22,9 @@
   gz_type_name: "gz.msgs.Odometry"
   direction: "GZ_TO_ROS"
 
-# Remove or fix the joint_states bridge - see note below
+# Topic published by JointStatePublisher plugin
+- ros_topic_name: "/joint_states"
+  gz_topic_name: "/joint_states"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model"
+  direction: GZ_TO_ROS
